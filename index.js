@@ -3,10 +3,10 @@
 const spanish = 'spanish';
 const french = 'french';
 
-const main = (name, language) => {
+function main(name, language) {
   if (name === '') name = 'world!';
   return `${cfgName(language)}, ${name}`;
-};
+}
 
 const cfgName = (language) => {
   let prefix = '';
@@ -24,6 +24,9 @@ const cfgName = (language) => {
   return prefix;
 };
 
-main('Harold');
+console.log(main('', ''));
+console.log(main('Harold', ''));
+console.log(main('Harold', 'spanish'));
+console.log(main('Harold', 'french'));
 
 module.exports = main;
