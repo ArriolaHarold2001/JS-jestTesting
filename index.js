@@ -24,9 +24,9 @@ const cfgName = (language) => {
   return prefix;
 };
 
-console.log(main('', ''));
-console.log(main('Harold', ''));
-console.log(main('Harold', 'spanish'));
-console.log(main('Harold', 'french'));
+console.log(main('', '')); // Hello, world!
+console.log(main('Harold', '')); // Hello, Harold
+console.log(main('Harold', 'spanish')); // Hola, Harold
+console.log(main('Harold', 'french')); // Bonjour, Harold
 
 module.exports = main;
